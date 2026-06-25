@@ -1,23 +1,39 @@
 @import "tailwindcss";
 
+:root {
+  --navy: #0b132b;
+  --gold: #c5a15b;
+  --light: #f8fafc;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  background: white;
   color: #0f172a;
-  background: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
   line-height: 1.1;
 }
 
 a {
   text-decoration: none;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    rgba(11, 19, 43, 0.85),
+    rgba(11, 19, 43, 0.85)
+  );
 }
